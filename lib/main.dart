@@ -1,3 +1,4 @@
+import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/log_in.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(),
+      home: const LogIn(),
     );
   }
 }
