@@ -46,6 +46,12 @@ class LogIn extends StatelessWidget {
                 height: 30,
               ),
               SubmitButton(),
+              Text(
+                'or',
+                style: TextStyle(
+                  fontSize: 25,
+                ),
+              ),
             ],
           ),
         ),
