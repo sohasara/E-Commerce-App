@@ -12,7 +12,10 @@ class LogIn extends StatelessWidget {
           children: [
             Text(
               'LOG IN',
-              style: TextStyle(),
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+              ),
             ),
             MyTextFeild()
           ],
