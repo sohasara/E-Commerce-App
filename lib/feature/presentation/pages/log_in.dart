@@ -18,8 +18,9 @@ class LogIn extends StatelessWidget {
               Text(
                 'LOG IN',
                 style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
+                  fontSize: 40,
+                  fontWeight: FontWeight.w900,
+                  color: Colors.pink,
                 ),
               ),
               SizedBox(
