@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class MyTextFeild extends StatelessWidget {
-  const MyTextFeild({super.key});
+  final Icon icon;
+  const MyTextFeild({super.key, required this.icon});
 
   @override
   Widget build(BuildContext context) {
@@ -12,9 +13,11 @@ class MyTextFeild extends StatelessWidget {
       ),
       child: TextField(
         decoration: InputDecoration(
-            border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(16),
-        )),
+          prefixIcon: icon,
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(16),
+          ),
+        ),
       ),
     );
   }
