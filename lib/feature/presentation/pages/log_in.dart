@@ -8,17 +8,23 @@ class LogIn extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Column(
-          children: [
-            Text(
-              'LOG IN',
-              style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
+        child: Padding(
+          padding: EdgeInsets.all(18.0),
+          child: Column(
+            children: [
+              SizedBox(
+                height: 100,
               ),
-            ),
-            MyTextFeild()
-          ],
+              Text(
+                'LOG IN',
+                style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              MyTextFeild()
+            ],
+          ),
         ),
       ),
     );
