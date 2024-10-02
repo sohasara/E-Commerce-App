@@ -27,7 +27,17 @@ class LogIn extends StatelessWidget {
                 height: 40,
               ),
               MyTextFeild(
-                icon: Icon(Icons.email),
+                icon: Icon(
+                  Icons.email,
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              MyTextFeild(
+                icon: Icon(
+                  Icons.key_sharp,
+                ),
               )
             ],
           ),
