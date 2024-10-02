@@ -6,12 +6,15 @@ class LogIn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Column(
-        children: [
-          Text(
-            'Log IN',
-          ),
-        ],
+      body: Center(
+        child: Column(
+          children: [
+            Text(
+              'LOG IN',
+              style: TextStyle(),
+            ),
+          ],
+        ),
       ),
     );
   }
