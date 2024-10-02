@@ -30,6 +30,7 @@ class LogIn extends StatelessWidget {
                 icon: Icon(
                   Icons.email,
                 ),
+                hinttext: 'Email',
               ),
               SizedBox(
                 height: 20,
@@ -38,7 +39,8 @@ class LogIn extends StatelessWidget {
                 icon: Icon(
                   Icons.key_sharp,
                 ),
-              )
+                hinttext: 'Password',
+              ),
             ],
           ),
         ),
