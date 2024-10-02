@@ -5,6 +5,11 @@ class MyTextFeild extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const TextField();
+    return TextField(
+      decoration: InputDecoration(
+          border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(20),
+      )),
+    );
   }
 }
