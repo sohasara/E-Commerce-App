@@ -13,7 +13,7 @@ class LogIn extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(
-                height: 100,
+                height: 80,
               ),
               Text(
                 'LOG IN',
@@ -21,6 +21,9 @@ class LogIn extends StatelessWidget {
                   fontSize: 30,
                   fontWeight: FontWeight.bold,
                 ),
+              ),
+              SizedBox(
+                height: 40,
               ),
               MyTextFeild()
             ],
