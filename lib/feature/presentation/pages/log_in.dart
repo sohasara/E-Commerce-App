@@ -34,7 +34,7 @@ class LogIn extends StatelessWidget {
                 hinttext: 'Email',
               ),
               SizedBox(
-                height: 25,
+                height: 30,
               ),
               MyTextFeild(
                 icon: Icon(
@@ -43,15 +43,9 @@ class LogIn extends StatelessWidget {
                 hinttext: 'Password',
               ),
               SizedBox(
-                height: 30,
+                height: 50,
               ),
               SubmitButton(),
-              Text(
-                'or',
-                style: TextStyle(
-                  fontSize: 25,
-                ),
-              ),
             ],
           ),
         ),
