@@ -1,3 +1,5 @@
+import 'package:delivery_app_with_admin_pannel/feature/presentation/widgets/my_text_feild.dart';
+import 'package:delivery_app_with_admin_pannel/feature/presentation/widgets/text_field.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -5,27 +7,12 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Padding(
-        padding: const EdgeInsets.all(18.0),
+        padding: EdgeInsets.all(18.0),
         child: Column(
           children: [
-            TextField(
-              decoration: InputDecoration(
-                filled: true,
-                prefixIcon: const Icon(
-                  Icons.search,
-                ),
-                prefixIconColor: Colors.white,
-                fillColor: Colors.purple[300],
-                border: const OutlineInputBorder(
-                  borderSide: BorderSide.none,
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(20),
-                  ),
-                ),
-              ),
-            ),
+            MyTextF(),
           ],
         ),
       ),
