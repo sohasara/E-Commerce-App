@@ -13,7 +13,11 @@ class MyTextF extends StatelessWidget {
         ),
         prefixIconColor: Colors.white,
         fillColor: Colors.pink,
-        border: const OutlineInputBorder(
+        hintText: 'search',
+        hintStyle: TextStyle(
+          color: Colors.white,
+        ),
+        border: OutlineInputBorder(
           borderSide: BorderSide.none,
           borderRadius: BorderRadius.all(
             Radius.circular(20),
