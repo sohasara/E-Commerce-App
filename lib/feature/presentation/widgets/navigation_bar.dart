@@ -8,7 +8,7 @@ class MyNavigationBar extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    int currentindex = ref.watch(bottomIndexProvider);
+    final currentindex = ref.watch(bottomIndexProvider);
     final List pages = [
       const HomePage(),
       const Text('category'),
@@ -19,7 +19,7 @@ class MyNavigationBar extends ConsumerWidget {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentindex,
         onTap: (value) {
-          value = ref.read(bottomIndexProvider.notifier).state;
+          ref.read(bottomIndexProvider.notifier).state = value;
         },
         items: const [
           BottomNavigationBarItem(
