@@ -12,6 +12,7 @@ class MyNavigationBar extends ConsumerWidget {
     final List pages = [
       const HomePage(),
       const Text('category'),
+      const Text('cart'),
       const Text('profile'),
     ];
     return Scaffold(
@@ -31,10 +32,15 @@ class MyNavigationBar extends ConsumerWidget {
             label: 'Category',
           ),
           BottomNavigationBarItem(
+            icon: Icon(Icons.shopping_cart),
+            label: 'Cart',
+          ),
+          BottomNavigationBarItem(
             icon: Icon(Icons.manage_accounts),
             label: 'Profile',
           ),
         ],
+        type: BottomNavigationBarType.fixed,
       ),
     );
   }
