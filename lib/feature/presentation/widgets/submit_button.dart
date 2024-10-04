@@ -1,4 +1,4 @@
-import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/home_page.dart';
+import 'package:delivery_app_with_admin_pannel/feature/presentation/widgets/navigation_bar.dart';
 import 'package:flutter/material.dart';
 
 class SubmitButton extends StatelessWidget {
@@ -11,7 +11,7 @@ class SubmitButton extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const HomePage(),
+            builder: (context) => const MyNavigationBar(),
           ),
         );
       },
