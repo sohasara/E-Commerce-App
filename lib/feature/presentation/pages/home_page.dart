@@ -20,7 +20,9 @@ class HomePage extends StatelessWidget {
               height: 140,
               width: 370,
               decoration: BoxDecoration(
-                color: Colors.pink,
+                gradient: const LinearGradient(
+                  colors: [Colors.pink, Colors.purple],
+                ),
                 borderRadius: BorderRadius.circular(18),
               ),
             ),
