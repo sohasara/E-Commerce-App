@@ -12,7 +12,10 @@ class HomePage extends StatelessWidget {
           children: [
             TextField(
               decoration: InputDecoration(
+                filled: true,
+                fillColor: Colors.amber,
                 border: OutlineInputBorder(
+                  borderSide: BorderSide.none,
                   borderRadius: BorderRadius.all(
                     Radius.circular(20),
                   ),
