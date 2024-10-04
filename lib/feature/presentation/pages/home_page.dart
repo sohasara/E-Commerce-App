@@ -5,16 +5,20 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Padding(
-        padding: EdgeInsets.all(18.0),
+        padding: const EdgeInsets.all(18.0),
         child: Column(
           children: [
             TextField(
               decoration: InputDecoration(
                 filled: true,
-                fillColor: Colors.amber,
-                border: OutlineInputBorder(
+                prefixIcon: const Icon(
+                  Icons.search,
+                ),
+                prefixIconColor: Colors.white,
+                fillColor: Colors.purple[300],
+                border: const OutlineInputBorder(
                   borderSide: BorderSide.none,
                   borderRadius: BorderRadius.all(
                     Radius.circular(20),
