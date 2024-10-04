@@ -7,12 +7,23 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Padding(
-        padding: EdgeInsets.all(18.0),
+        padding: const EdgeInsets.all(18.0),
         child: Column(
           children: [
-            MyTextF(),
+            const MyTextF(),
+            const SizedBox(
+              height: 10,
+            ),
+            Container(
+              height: 140,
+              width: 370,
+              decoration: BoxDecoration(
+                color: Colors.pink,
+                borderRadius: BorderRadius.circular(18),
+              ),
+            ),
           ],
         ),
       ),

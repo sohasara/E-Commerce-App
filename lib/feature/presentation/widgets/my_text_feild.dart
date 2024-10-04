@@ -5,22 +5,28 @@ class MyTextF extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const TextField(
-      decoration: InputDecoration(
-        filled: true,
-        prefixIcon: Icon(
-          Icons.search,
-        ),
-        prefixIconColor: Colors.white,
-        fillColor: Colors.pink,
-        hintText: 'search',
-        hintStyle: TextStyle(
-          color: Colors.white,
-        ),
-        border: OutlineInputBorder(
-          borderSide: BorderSide.none,
-          borderRadius: BorderRadius.all(
-            Radius.circular(20),
+    return const Padding(
+      padding: EdgeInsets.only(
+        left: 12.0,
+        right: 12,
+      ),
+      child: TextField(
+        decoration: InputDecoration(
+          filled: true,
+          prefixIcon: Icon(
+            Icons.search,
+          ),
+          prefixIconColor: Colors.white,
+          fillColor: Colors.pink,
+          hintText: 'search',
+          hintStyle: TextStyle(
+            color: Colors.white,
+          ),
+          border: OutlineInputBorder(
+            borderSide: BorderSide.none,
+            borderRadius: BorderRadius.all(
+              Radius.circular(18),
+            ),
           ),
         ),
       ),
