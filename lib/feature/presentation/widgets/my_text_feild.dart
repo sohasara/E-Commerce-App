@@ -7,8 +7,8 @@ class MyTextF extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Padding(
       padding: EdgeInsets.only(
-        left: 12.0,
-        right: 12,
+        left: 0.0,
+        right: 20,
       ),
       child: TextField(
         decoration: InputDecoration(

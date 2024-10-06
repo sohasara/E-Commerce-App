@@ -9,8 +9,9 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.all(18.0),
+        padding: const EdgeInsets.all(20.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const MyTextF(),
             const SizedBox(
@@ -29,6 +30,13 @@ class HomePage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(18),
               ),
             ),
+            const Text(
+              ' Sales',
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+              ),
+            )
           ],
         ),
       ),
