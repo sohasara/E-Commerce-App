@@ -38,7 +38,6 @@ class CategoryPage extends StatelessWidget {
                   return Container(
                     decoration: BoxDecoration(
                       border: Border.all(width: 0.5),
-                      // color: Colors.pink[100],
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Column(
