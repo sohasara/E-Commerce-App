@@ -5,6 +5,24 @@ class Cart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          const Text('Item Cart'),
+          Expanded(
+            child: ListView.builder(
+              itemCount: 8,
+              itemBuilder: (context, index) {
+                return const ListTile(
+                  title: Text('Shoes'),
+                  trailing: CircleAvatar(),
+                  subtitle: Text('\$45'),
+                );
+              },
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
