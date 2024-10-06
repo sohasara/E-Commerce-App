@@ -37,11 +37,26 @@ class HomePage extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Row(
-              children: [
-                Container(),
-                Container(),
-              ],
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  Container(
+                    height: 150,
+                    width: 160,
+                    decoration: BoxDecoration(
+                      border: Border.all(),
+                    ),
+                  ),
+                  Container(
+                    height: 150,
+                    width: 160,
+                    decoration: BoxDecoration(
+                      border: Border.all(),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ],
         ),
