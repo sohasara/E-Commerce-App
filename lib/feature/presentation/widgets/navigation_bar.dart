@@ -1,6 +1,7 @@
 import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/cart/item_cart.dart';
 import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/category/cate.dart';
 import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/home/home_page.dart';
+import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/profile/profile_page.dart';
 import 'package:delivery_app_with_admin_pannel/feature/presentation/riverpod/bottom_index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -15,7 +16,7 @@ class MyNavigationBar extends ConsumerWidget {
       const HomePage(),
       const CategoryPage(),
       const Cart(),
-      const Text('profile'),
+      const ProfilePage(),
     ];
     return Scaffold(
       body: pages[currentindex],
