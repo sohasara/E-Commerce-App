@@ -8,7 +8,14 @@ class Cart extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          const Text('Item Cart'),
+          const Text(
+            'Item Cart',
+            style: TextStyle(
+              fontSize: 25,
+              fontWeight: FontWeight.bold,
+              color: Colors.pink,
+            ),
+          ),
           Expanded(
             child: ListView.builder(
               itemCount: 8,
