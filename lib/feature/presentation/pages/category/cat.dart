@@ -5,20 +5,48 @@ class CategoryPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Padding(
         padding: const EdgeInsets.all(18.0),
-        child: Column(
-          children: [
-            Text(
-              'Categories',
-              style: TextStyle(
-                fontSize: 28,
-                fontWeight: FontWeight.w600,
-                color: Colors.pink,
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              const Center(
+                child: Text(
+                  'Categories',
+                  style: TextStyle(
+                    fontSize: 28,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.pink,
+                  ),
+                ),
               ),
-            ),
-          ],
+              const SizedBox(
+                height: 10,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    height: 150,
+                    width: 160,
+                    decoration: BoxDecoration(
+                      border: Border.all(width: 0.5),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  Container(
+                    height: 150,
+                    width: 160,
+                    decoration: BoxDecoration(
+                      border: Border.all(width: 0.5),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );
