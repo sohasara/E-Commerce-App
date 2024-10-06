@@ -1,3 +1,4 @@
+import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/cart/item_cart.dart';
 import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/category/cate.dart';
 import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/home/home_page.dart';
 import 'package:delivery_app_with_admin_pannel/feature/presentation/riverpod/bottom_index.dart';
@@ -13,7 +14,7 @@ class MyNavigationBar extends ConsumerWidget {
     final List pages = [
       const HomePage(),
       const CategoryPage(),
-      const Text('cart'),
+      const Cart(),
       const Text('profile'),
     ];
     return Scaffold(
