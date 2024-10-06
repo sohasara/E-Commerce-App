@@ -36,7 +36,13 @@ class HomePage extends StatelessWidget {
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
               ),
-            )
+            ),
+            Row(
+              children: [
+                Container(),
+                Container(),
+              ],
+            ),
           ],
         ),
       ),
