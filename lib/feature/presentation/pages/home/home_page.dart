@@ -73,6 +73,22 @@ class HomePage extends StatelessWidget {
                   color: Colors.pink,
                 ),
               ),
+              Container(
+                height: 150,
+                width: 160,
+                decoration: BoxDecoration(
+                  border: Border.all(width: 0.5),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+              Container(
+                height: 150,
+                width: 160,
+                decoration: BoxDecoration(
+                  border: Border.all(width: 0.5),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
             ],
           ),
         ),
