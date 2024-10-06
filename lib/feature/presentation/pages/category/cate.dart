@@ -42,6 +42,11 @@ class CategoryPage extends StatelessWidget {
                       border: Border.all(width: 0.5),
                       borderRadius: BorderRadius.circular(10),
                     ),
+                    child: Image.asset(
+                      'assets/icons/bag.png',
+                      height: 100,
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ],
               ),
