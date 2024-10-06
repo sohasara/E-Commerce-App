@@ -54,8 +54,9 @@ class CategoryPage extends StatelessWidget {
                         Text(
                           category['name']!,
                           style: const TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w500,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.pink,
                           ),
                         ),
                       ],

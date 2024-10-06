@@ -36,7 +36,7 @@ final categories = [
   },
   {
     'id': '7',
-    'name': 'Home Decor',
+    'name': 'Home Decors',
     'iconurl': 'assets/icons/home_dec.png',
   },
 ];
