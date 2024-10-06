@@ -1,3 +1,4 @@
+import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/category/cat.dart';
 import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/home/home_page.dart';
 import 'package:delivery_app_with_admin_pannel/feature/presentation/riverpod/bottom_index.dart';
 import 'package:flutter/material.dart';
@@ -11,7 +12,7 @@ class MyNavigationBar extends ConsumerWidget {
     final currentindex = ref.watch(bottomIndexProvider);
     final List pages = [
       const HomePage(),
-      const Text('category'),
+      const CategoryPage(),
       const Text('cart'),
       const Text('profile'),
     ];
