@@ -17,8 +17,15 @@ class DressPage extends StatelessWidget {
           ),
         ),
       ),
-      body: const Column(
-        children: [],
+      body: const Padding(
+        padding: EdgeInsets.all(18.0),
+        child: Column(
+          children: [
+            Chip(
+              label: Text('Shirt'),
+            ),
+          ],
+        ),
       ),
     );
   }
