@@ -5,8 +5,15 @@ class GirlsDress extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [],
+    return const Padding(
+      padding: EdgeInsets.all(8.0),
+      child: Column(
+        children: [
+          Chip(
+            label: Text('data'),
+          ),
+        ],
+      ),
     );
   }
 }
