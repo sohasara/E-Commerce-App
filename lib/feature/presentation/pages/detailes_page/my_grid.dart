@@ -33,15 +33,15 @@ class MyGrid extends StatelessWidget {
                   children: [
                     Image.asset(
                       dres['url']!,
-                      height: 100,
-                      width: 100,
+                      height: 148,
+                      width: 185,
                       fit: BoxFit.cover,
                     ),
-                    const SizedBox(height: 10),
+                    const SizedBox(height: 5),
                     Text(
                       dres['name']!,
                       style: const TextStyle(
-                        fontSize: 20,
+                        fontSize: 15,
                         fontWeight: FontWeight.bold,
                         color: Colors.pink,
                       ),
