@@ -5,12 +5,33 @@ class GirlsDress extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.all(8.0),
+    final List<String> girlDress = [
+      'Bengali',
+      'Pakistani',
+      'Western',
+      'Borkha',
+    ];
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Chip(
-            label: Text('data'),
+          SizedBox(
+            height: 50,
+            child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: girlDress.length,
+                itemBuilder: (context, index) {
+                  return Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Chip(
+                      label: Text(
+                        girlDress[index],
+                      ),
+                    ),
+                  );
+                }),
           ),
         ],
       ),
