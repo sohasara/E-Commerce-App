@@ -5,11 +5,20 @@ class DressPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Column(
-        children: [
-          Text('Find the best OutFits'),
-        ],
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text(
+          'Find the best OutFits',
+          style: TextStyle(
+            color: Colors.purple[800],
+            fontWeight: FontWeight.bold,
+            fontSize: 25,
+          ),
+        ),
+      ),
+      body: const Column(
+        children: [],
       ),
     );
   }
