@@ -10,7 +10,13 @@ class DressPage extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: const Text('Find the best outfit'),
+          title: const Text(
+            'Find the best outfits',
+            style: TextStyle(
+              color: Colors.purple,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
           bottom: const TabBar(
             tabs: [
               Tab(
