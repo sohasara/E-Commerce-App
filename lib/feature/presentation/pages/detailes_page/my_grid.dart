@@ -1,6 +1,5 @@
+import 'package:delivery_app_with_admin_pannel/feature/data/models/dress_model.dart';
 import 'package:flutter/material.dart';
-
-import '../../../data/models/category_model.dart';
 
 class MyGrid extends StatelessWidget {
   const MyGrid({super.key});
@@ -19,9 +18,9 @@ class MyGrid extends StatelessWidget {
             mainAxisSpacing: 15,
             childAspectRatio: 1,
           ),
-          itemCount: categories.length,
+          itemCount: dress.length,
           itemBuilder: (context, index) {
-            final category = categories[index];
+            final dres = dress[index];
             return GestureDetector(
               onTap: () {},
               child: Container(
@@ -33,14 +32,14 @@ class MyGrid extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Image.asset(
-                      category['iconurl']!,
+                      dres['url']!,
                       height: 100,
                       width: 100,
                       fit: BoxFit.cover,
                     ),
                     const SizedBox(height: 10),
                     Text(
-                      category['name']!,
+                      dres['name']!,
                       style: const TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
