@@ -1,4 +1,5 @@
 import 'package:delivery_app_with_admin_pannel/feature/data/models/category_model.dart';
+import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/detailes_page/dress.dart';
 import 'package:flutter/material.dart';
 
 class CategoryPage extends StatelessWidget {
@@ -35,30 +36,38 @@ class CategoryPage extends StatelessWidget {
                 itemCount: categories.length,
                 itemBuilder: (context, index) {
                   final category = categories[index];
-                  return Container(
-                    decoration: BoxDecoration(
-                      border: Border.all(width: 0.5),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Image.asset(
-                          category['iconurl']!,
-                          height: 100,
-                          width: 100,
-                          fit: BoxFit.cover,
-                        ),
-                        const SizedBox(height: 10),
-                        Text(
-                          category['name']!,
-                          style: const TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.pink,
+                  return GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const DressPage()));
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(width: 0.5),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            category['iconurl']!,
+                            height: 100,
+                            width: 100,
+                            fit: BoxFit.cover,
                           ),
-                        ),
-                      ],
+                          const SizedBox(height: 10),
+                          Text(
+                            category['name']!,
+                            style: const TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.pink,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   );
                 },
