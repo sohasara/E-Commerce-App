@@ -1,9 +1,8 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class ChipSelectionNotifier extends StateNotifier<int> {
-  ChipSelectionNotifier() : super(-1); // Initially, no chip is selected
+  ChipSelectionNotifier() : super(-1);
 
-  // Method to select only one chip at a time
   void selectChip(int index) {
     state = index;
   }
