@@ -1,5 +1,5 @@
 import 'package:delivery_app_with_admin_pannel/feature/data/models/category_model.dart';
-import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/detailes_page/dress.dart';
+import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/category/dress.dart';
 import 'package:flutter/material.dart';
 
 class CategoryPage extends StatelessWidget {
