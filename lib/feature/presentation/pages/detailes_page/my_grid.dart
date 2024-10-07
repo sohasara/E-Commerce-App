@@ -39,7 +39,7 @@ class MyGrid extends StatelessWidget {
                     ),
                     const SizedBox(height: 5),
                     Text(
-                      dres['name']!,
+                      'Price:${dres['price']!}',
                       style: const TextStyle(
                         fontSize: 15,
                         fontWeight: FontWeight.bold,
