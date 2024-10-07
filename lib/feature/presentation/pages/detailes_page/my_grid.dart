@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../data/models/category_model.dart';
+import '../../../data/models/category_model.dart';
 
 class MyGrid extends StatelessWidget {
   const MyGrid({super.key});
