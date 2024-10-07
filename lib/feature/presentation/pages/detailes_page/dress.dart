@@ -13,11 +13,20 @@ class DressPage extends StatelessWidget {
           title: const Text(
             'Find the best outfits',
             style: TextStyle(
-              color: Colors.purple,
               fontWeight: FontWeight.bold,
             ),
           ),
           bottom: const TabBar(
+            indicatorColor: Colors.blue,
+            labelStyle: TextStyle(
+              fontSize: 20,
+              color: Colors.blue,
+              fontWeight: FontWeight.bold,
+            ),
+            unselectedLabelStyle: TextStyle(
+              fontSize: 18,
+              color: Colors.purple,
+            ),
             tabs: [
               Tab(
                 text: 'Girls',
