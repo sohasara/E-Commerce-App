@@ -9,10 +9,14 @@ class DressPage extends StatelessWidget {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
+          centerTitle: true,
+          title: const Text('Find the best outfit'),
           bottom: const TabBar(
             tabs: [
-              Tab(icon: Icon(Icons.home), text: 'Home'),
-              Tab(icon: Icon(Icons.star), text: 'Favorites'),
+              Tab(
+                text: 'Girls',
+              ),
+              Tab(text: 'Boys'),
             ],
           ),
         ),
