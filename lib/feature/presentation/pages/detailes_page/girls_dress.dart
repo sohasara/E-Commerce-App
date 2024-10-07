@@ -43,6 +43,8 @@ class GirlsDress extends ConsumerWidget {
                       color: selectedChipIndex == index
                           ? Colors.white
                           : Colors.pink,
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
                     ),
                     showCheckmark: false,
                     onSelected: (bool selected) {
