@@ -5,25 +5,21 @@ class DressPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text(
-          'Find the best OutFits',
-          style: TextStyle(
-            color: Colors.purple[800],
-            fontWeight: FontWeight.bold,
-            fontSize: 25,
+    return DefaultTabController(
+      length: 2,
+      child: Scaffold(
+        appBar: AppBar(
+          bottom: const TabBar(
+            tabs: [
+              Tab(icon: Icon(Icons.home), text: 'Home'),
+              Tab(icon: Icon(Icons.star), text: 'Favorites'),
+            ],
           ),
         ),
-      ),
-      body: const Padding(
-        padding: EdgeInsets.all(18.0),
-        child: Column(
+        body: const TabBarView(
           children: [
-            Chip(
-              label: Text('Shirt'),
-            ),
+            Center(child: Text('Home Tab')),
+            Center(child: Text('Favorites Tab')),
           ],
         ),
       ),
