@@ -1,3 +1,4 @@
+import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/detailes_page/boys_dress.dart';
 import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/detailes_page/girls_dress.dart';
 import 'package:flutter/material.dart';
 
@@ -39,7 +40,7 @@ class DressPage extends StatelessWidget {
         body: const TabBarView(
           children: [
             GirlsDress(),
-            Center(child: Text('Favorites Tab')),
+            BoysDress(),
           ],
         ),
       ),
