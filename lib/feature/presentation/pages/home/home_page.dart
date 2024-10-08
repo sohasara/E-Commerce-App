@@ -1,3 +1,4 @@
+import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/detailes_page/my_grid.dart';
 import 'package:delivery_app_with_admin_pannel/feature/presentation/widgets/my_text_feild.dart';
 
 import 'package:flutter/material.dart';
@@ -73,14 +74,8 @@ class HomePage extends StatelessWidget {
                   color: Colors.pink,
                 ),
               ),
-              Container(
-                height: 150,
-                width: 160,
-                decoration: BoxDecoration(
-                  border: Border.all(width: 0.5),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
+              const MyGrid(),
+              const MyGrid(),
             ],
           ),
         ),
