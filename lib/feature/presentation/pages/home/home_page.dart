@@ -1,3 +1,4 @@
+import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/detailes_page/grid_boys.dart';
 import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/detailes_page/my_grid.dart';
 import 'package:delivery_app_with_admin_pannel/feature/presentation/widgets/my_container.dart';
 import 'package:delivery_app_with_admin_pannel/feature/presentation/widgets/my_text_feild.dart';
@@ -61,7 +62,7 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               const MyGrid(),
-              const MyGrid(),
+              const GridBoys(),
             ],
           ),
         ),
