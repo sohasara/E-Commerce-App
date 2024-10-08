@@ -15,7 +15,7 @@ class ChipContainer extends StatelessWidget {
         height: 40,
         width: 90,
         decoration: BoxDecoration(
-          border: Border.all(),
+          border: Border.all(width: 0.3),
           borderRadius: BorderRadius.circular(10),
         ),
         child: Center(
