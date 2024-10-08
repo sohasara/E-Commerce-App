@@ -23,19 +23,15 @@ class MyGrid extends StatelessWidget {
             final dres = girldress[index];
             return GestureDetector(
               onTap: () {},
-              child: Container(
-                decoration: BoxDecoration(
-                  border: Border.all(width: 0.5),
-                  borderRadius: BorderRadius.circular(10),
-                ),
+              child: Card(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Image.asset(
                       dres['url']!,
-                      height: 148,
+                      height: 140,
                       width: 185,
-                      fit: BoxFit.cover,
+                      fit: BoxFit.fitHeight,
                     ),
                     const SizedBox(height: 5),
                     Text(
