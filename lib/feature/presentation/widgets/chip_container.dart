@@ -5,12 +5,15 @@ class ChipContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 40,
-      width: 90,
-      decoration: BoxDecoration(
-        border: Border.all(),
-        borderRadius: BorderRadius.circular(10),
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Container(
+        height: 40,
+        width: 90,
+        decoration: BoxDecoration(
+          border: Border.all(),
+          borderRadius: BorderRadius.circular(10),
+        ),
       ),
     );
   }

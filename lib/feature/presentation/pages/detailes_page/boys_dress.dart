@@ -1,3 +1,4 @@
+import 'package:delivery_app_with_admin_pannel/feature/presentation/widgets/chip_container.dart';
 import 'package:flutter/material.dart';
 
 class BoysDress extends StatelessWidget {
@@ -5,46 +6,24 @@ class BoysDress extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final List<String> boysCat = [
+      'Bengali',
+      'Pant',
+      'Shirt',
+      'T-Shirt',
+    ];
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Column(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                height: 40,
-                width: 90,
-                decoration: BoxDecoration(
-                  border: Border.all(),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-              Container(
-                height: 40,
-                width: 90,
-                decoration: BoxDecoration(
-                  border: Border.all(),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-              Container(
-                height: 40,
-                width: 90,
-                decoration: BoxDecoration(
-                  border: Border.all(),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-              Container(
-                height: 40,
-                width: 90,
-                decoration: BoxDecoration(
-                  border: Border.all(),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-            ],
+          SizedBox(
+            height: 55,
+            child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: boysCat.length,
+                itemBuilder: (context, index) {
+                  return ChipContainer();
+                }),
           )
         ],
       ),
