@@ -41,10 +41,9 @@ class HomePage extends StatelessWidget {
                   color: Colors.pink,
                 ),
               ),
-              SingleChildScrollView(
+              const SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     MyContainer(),
                     MyContainer(),
