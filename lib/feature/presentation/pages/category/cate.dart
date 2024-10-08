@@ -39,9 +39,11 @@ class CategoryPage extends StatelessWidget {
                   return GestureDetector(
                     onTap: () {
                       Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const DressPage()));
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const DressPage(),
+                        ),
+                      );
                     },
                     child: Container(
                       decoration: BoxDecoration(
