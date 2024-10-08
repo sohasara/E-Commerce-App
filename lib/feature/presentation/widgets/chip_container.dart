@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
 class ChipContainer extends StatelessWidget {
-  const ChipContainer({super.key});
+  final String name;
+  const ChipContainer({
+    super.key,
+    required this.name,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -13,6 +17,9 @@ class ChipContainer extends StatelessWidget {
         decoration: BoxDecoration(
           border: Border.all(),
           borderRadius: BorderRadius.circular(10),
+        ),
+        child: Center(
+          child: Text(name),
         ),
       ),
     );

@@ -22,7 +22,9 @@ class BoysDress extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 itemCount: boysCat.length,
                 itemBuilder: (context, index) {
-                  return ChipContainer();
+                  return ChipContainer(
+                    name: boysCat[index],
+                  );
                 }),
           )
         ],
