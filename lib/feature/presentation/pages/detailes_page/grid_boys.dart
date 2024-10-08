@@ -1,8 +1,8 @@
 import 'package:delivery_app_with_admin_pannel/feature/data/models/boy_dress_model.dart';
 import 'package:flutter/material.dart';
 
-class MyGrid extends StatelessWidget {
-  const MyGrid({super.key});
+class GridBoys extends StatelessWidget {
+  const GridBoys({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +39,7 @@ class MyGrid extends StatelessWidget {
                       style: const TextStyle(
                         fontSize: 15,
                         fontWeight: FontWeight.bold,
-                        color: Colors.pink,
+                        color: Colors.blue,
                       ),
                     ),
                   ],

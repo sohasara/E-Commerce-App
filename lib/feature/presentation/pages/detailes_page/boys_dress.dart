@@ -1,4 +1,5 @@
-import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/detailes_page/my_grid.dart';
+import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/detailes_page/grid_boys.dart';
+
 import 'package:delivery_app_with_admin_pannel/feature/presentation/widgets/chip_container.dart';
 import 'package:flutter/material.dart';
 
@@ -29,7 +30,7 @@ class BoysDress extends StatelessWidget {
                     );
                   }),
             ),
-            const MyGrid(),
+            const GridBoys(),
           ],
         ),
       ),
