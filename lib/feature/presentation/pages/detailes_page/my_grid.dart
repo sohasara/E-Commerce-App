@@ -1,4 +1,4 @@
-import 'package:delivery_app_with_admin_pannel/feature/data/models/dress_model.dart';
+import 'package:delivery_app_with_admin_pannel/feature/data/models/girl_dress_model.dart';
 import 'package:flutter/material.dart';
 
 class MyGrid extends StatelessWidget {
