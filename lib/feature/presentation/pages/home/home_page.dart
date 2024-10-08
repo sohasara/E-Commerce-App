@@ -1,4 +1,5 @@
 import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/detailes_page/my_grid.dart';
+import 'package:delivery_app_with_admin_pannel/feature/presentation/widgets/my_container.dart';
 import 'package:delivery_app_with_admin_pannel/feature/presentation/widgets/my_text_feild.dart';
 
 import 'package:flutter/material.dart';
@@ -45,14 +46,10 @@ class HomePage extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Container(
-                      height: 150,
-                      width: 160,
-                      decoration: BoxDecoration(
-                        border: Border.all(width: 0.5),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
+                    MyContainer(),
+                    MyContainer(),
+                    MyContainer(),
+                    MyContainer(),
                   ],
                 ),
               ),
