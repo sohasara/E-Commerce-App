@@ -1,4 +1,4 @@
-final dress = [
+final girldress = [
   {
     'url': 'assets/images/dress1.webp',
     'price': '5000',

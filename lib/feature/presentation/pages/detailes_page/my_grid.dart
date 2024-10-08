@@ -18,9 +18,9 @@ class MyGrid extends StatelessWidget {
             mainAxisSpacing: 15,
             childAspectRatio: 1,
           ),
-          itemCount: dress.length,
+          itemCount: girldress.length,
           itemBuilder: (context, index) {
-            final dres = dress[index];
+            final dres = girldress[index];
             return GestureDetector(
               onTap: () {},
               child: Container(
