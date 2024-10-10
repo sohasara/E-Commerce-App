@@ -35,7 +35,7 @@ class GirlsDress extends StatelessWidget {
                 },
               ),
             ),
-            const MyGrid()
+            const MyGrid(),
           ],
         ),
       ),
