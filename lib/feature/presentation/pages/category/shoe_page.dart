@@ -6,7 +6,7 @@ class ShoePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final shoesname = ['slippers', 'Snekers'];
+    final shoesname = ['slippers', 'Sneakers', 'Hills'];
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
