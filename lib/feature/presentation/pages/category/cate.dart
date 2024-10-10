@@ -1,5 +1,12 @@
 import 'package:delivery_app_with_admin_pannel/feature/data/models/category_model.dart';
+import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/category/appliance.dart';
+import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/category/bag_page.dart';
 import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/category/dress.dart';
+import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/category/home_decor.dart';
+import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/category/laptop.dart';
+import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/category/ornaments.dart';
+import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/category/phone.dart';
+import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/category/shoe_page.dart';
 import 'package:flutter/material.dart';
 
 class CategoryPage extends StatelessWidget {
@@ -7,6 +14,16 @@ class CategoryPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const catePage = [
+      DressPage(),
+      ShoePage(),
+      BagPage(),
+      OrnamentsPage(),
+      LaptopPage(),
+      PhonePage(),
+      AppliancePage(),
+      HomeDecor(),
+    ];
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.all(18.0),
@@ -41,7 +58,7 @@ class CategoryPage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const DressPage(),
+                          builder: (context) => catePage[index],
                         ),
                       );
                     },
