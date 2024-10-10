@@ -7,7 +7,7 @@ class ShoePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('ShoesPage'),
+        title: const Text('ShoesPage'),
       ),
     );
   }
