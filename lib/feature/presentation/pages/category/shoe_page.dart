@@ -1,3 +1,4 @@
+import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/detailes_page/shoe_grid.dart';
 import 'package:delivery_app_with_admin_pannel/feature/presentation/widgets/chip_container.dart';
 import 'package:flutter/material.dart';
 
@@ -24,6 +25,7 @@ class ShoePage extends StatelessWidget {
               },
             ),
           ),
+          const ShoeGrid(),
         ],
       ),
     );

@@ -20,16 +20,6 @@ final categories = [
     'iconurl': 'assets/icons/jewel.png',
   },
   {
-    'id': '4',
-    'name': 'Laptops',
-    'iconurl': 'assets/icons/laptop.png',
-  },
-  {
-    'id': '5',
-    'name': 'Phones',
-    'iconurl': 'assets/icons/phone.png',
-  },
-  {
     'id': '6',
     'name': 'Home Appliances',
     'iconurl': 'assets/icons/appliances.png',

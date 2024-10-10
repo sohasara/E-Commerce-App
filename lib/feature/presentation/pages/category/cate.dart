@@ -3,9 +3,9 @@ import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/catego
 import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/category/bag_page.dart';
 import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/category/dress.dart';
 import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/category/home_decor.dart';
-import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/category/laptop.dart';
+
 import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/category/ornaments.dart';
-import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/category/phone.dart';
+
 import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/category/shoe_page.dart';
 import 'package:flutter/material.dart';
 
@@ -19,8 +19,6 @@ class CategoryPage extends StatelessWidget {
       ShoePage(),
       BagPage(),
       OrnamentsPage(),
-      LaptopPage(),
-      PhonePage(),
       AppliancePage(),
       HomeDecor(),
     ];
