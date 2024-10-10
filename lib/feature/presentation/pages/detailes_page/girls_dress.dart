@@ -9,6 +9,7 @@ class GirlsDress extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List<String> girlDress = [
+      'All',
       'Bengali',
       'Pakistani',
       'Western',
