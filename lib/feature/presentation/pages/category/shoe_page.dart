@@ -6,7 +6,7 @@ class ShoePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final shoesname = ['slippers', 'Sneakers', 'Hills'];
+    final shoesname = ['slippers', 'Sneakers', 'Hills', 'Casuals'];
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -17,11 +17,12 @@ class ShoePage extends StatelessWidget {
           SizedBox(
             height: 55,
             child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: shoesname.length,
-                itemBuilder: (context, index) {
-                  return ChipContainer(name: shoesname[index]);
-                }),
+              scrollDirection: Axis.horizontal,
+              itemCount: shoesname.length,
+              itemBuilder: (context, index) {
+                return ChipContainer(name: shoesname[index]);
+              },
+            ),
           ),
         ],
       ),
