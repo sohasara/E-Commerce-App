@@ -5,12 +5,12 @@ final girldress = [
     'price': '5000',
   },
   {
-    'category': 'bengali',
+    'category': 'pakistani',
     'url': 'assets/images/dress2.webp',
     'price': '2000',
   },
   {
-    'category': 'bengali',
+    'category': 'western',
     'url': 'assets/images/dress3.jpeg',
     'price': '3000',
   },
@@ -20,7 +20,7 @@ final girldress = [
     'price': '3500',
   },
   {
-    'category': 'bengali',
+    'category': 'borkha',
     'url': 'assets/images/dress5.webp',
     'price': '400',
   },
