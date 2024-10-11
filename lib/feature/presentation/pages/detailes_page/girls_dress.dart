@@ -62,7 +62,6 @@ class GirlsDress extends ConsumerWidget {
       'Borkha'
     ];
 
-    // Watch selected category and filtered dresses
     final selectedCategory = ref.watch(girlDressCategoryProvider);
     final filteredDresses = ref.watch(dressesProvider);
 
