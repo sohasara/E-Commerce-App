@@ -61,6 +61,7 @@ class GirlsDress extends ConsumerWidget {
               itemBuilder: (context, index) {
                 final dress = filteredDresses[index];
                 return Card(
+                  elevation: 5,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -76,7 +77,7 @@ class GirlsDress extends ConsumerWidget {
                         style: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
-                          color: Colors.black,
+                          color: Colors.pink,
                         ),
                       ),
                     ],
