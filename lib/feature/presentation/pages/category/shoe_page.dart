@@ -21,7 +21,10 @@ class ShoePage extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               itemCount: shoesname.length,
               itemBuilder: (context, index) {
-                return ChipContainer(name: shoesname[index]);
+                return ChipContainer(
+                  name: shoesname[index],
+                  isSelected: true,
+                );
               },
             ),
           ),
