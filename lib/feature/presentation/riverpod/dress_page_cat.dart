@@ -41,12 +41,10 @@ final dressesProvider = Provider<List<Map<String, String>>>((ref) {
     {'category': 'bengali', 'url': 'assets/images/dress6.jpg', 'price': '700'},
   ];
 
-  // If "All" is selected, show all dresses
   if (selectedCategory == 'All') {
     return allDresses;
   }
 
-  // Otherwise, filter dresses based on selected category
   return allDresses
       .where((dress) =>
           dress['category']!.toLowerCase() == selectedCategory.toLowerCase())
