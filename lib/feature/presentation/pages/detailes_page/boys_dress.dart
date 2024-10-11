@@ -27,7 +27,6 @@ class BoysDress extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return ChipContainer(
                       name: boysCat[index],
-                      isSelected: true,
                     );
                   }),
             ),

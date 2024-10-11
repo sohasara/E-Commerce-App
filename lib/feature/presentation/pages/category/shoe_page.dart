@@ -23,7 +23,6 @@ class ShoePage extends StatelessWidget {
               itemBuilder: (context, index) {
                 return ChipContainer(
                   name: shoesname[index],
-                  isSelected: true,
                 );
               },
             ),
