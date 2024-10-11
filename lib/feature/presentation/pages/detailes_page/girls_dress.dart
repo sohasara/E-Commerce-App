@@ -43,7 +43,7 @@
 //   }
 // }
 
-import 'package:delivery_app_with_admin_pannel/feature/presentation/riverpod/dress_page_cat.dart';
+import 'package:delivery_app_with_admin_pannel/feature/presentation/riverpod/girl_dress_page_cat.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
