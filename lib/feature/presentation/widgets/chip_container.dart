@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 class ChipContainer extends StatelessWidget {
   final String name;
   final bool isSelected;
+  final Color color;
   const ChipContainer({
     super.key,
     required this.name,
     this.isSelected = false,
+    required this.color,
   });
 
   @override
@@ -17,7 +19,7 @@ class ChipContainer extends StatelessWidget {
         height: 40,
         width: 90,
         decoration: BoxDecoration(
-          color: isSelected ? Colors.pink : Colors.grey.shade300,
+          color: isSelected ? color : Colors.grey.shade300,
           borderRadius: BorderRadius.circular(10),
         ),
         child: Center(

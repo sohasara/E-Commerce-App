@@ -38,6 +38,7 @@ class BoysDress extends ConsumerWidget {
                       child: ChipContainer(
                         name: boysCat[index],
                         isSelected: categorySelect == boysCat[index],
+                        color: Colors.blue,
                       ),
                     );
                   }),
