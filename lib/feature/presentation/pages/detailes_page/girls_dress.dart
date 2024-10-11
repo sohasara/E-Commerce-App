@@ -66,8 +66,8 @@ class GirlsDress extends ConsumerWidget {
                     children: [
                       Image.asset(
                         dress['url']!,
-                        height: 100,
-                        width: 100,
+                        height: 150,
+                        width: 150,
                         fit: BoxFit.cover,
                       ),
                       const SizedBox(height: 10),
