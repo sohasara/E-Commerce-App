@@ -4,12 +4,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../riverpod/filted_dress_provider.dart';
 
-class CategoryPage extends ConsumerWidget {
+class ImageGrid extends ConsumerWidget {
   final String title;
   final List<String> categories;
   final List<Map<String, String>> items;
 
-  const CategoryPage({
+  const ImageGrid({
     required this.title,
     required this.categories,
     required this.items,
@@ -39,8 +39,8 @@ class CategoryPage extends ConsumerWidget {
                             .selectCategory(category);
                       },
                       child: ChipContainer(
-                        name: category[index],
-                        isSelected: selectedCategory == category[index],
+                        name: category,
+                        isSelected: selectedCategory == category,
                         color: Colors.blue,
                       ),
                     );

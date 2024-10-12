@@ -10,14 +10,15 @@ class ChipStateNotifier extends StateNotifier<String> {
 
 final chipProviderFamily =
     StateNotifierProvider.family<ChipStateNotifier, String, String>(
-        (ref, categoryType) {
-  return ChipStateNotifier();
-});
+  (ref, categoryType) {
+    return ChipStateNotifier();
+  },
+);
 
 final listProviderFamily =
     Provider.family<List<Map<String, String>>, List<Map<String, String>>>(
         (ref, items) {
-  final selectedCategory = ref.watch(chipProviderFamily('categoryType'));
+  final selectedCategory = ref.watch(chipProviderFamily('BagPage'));
 
   if (selectedCategory == 'All') {
     return items;
