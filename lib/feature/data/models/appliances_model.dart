@@ -1,4 +1,4 @@
-final ornamentsModel = [
+final applianceModel = [
   {
     'category': 'Fridge',
     'url': 'assets/images/homeAppl1.jpeg',
