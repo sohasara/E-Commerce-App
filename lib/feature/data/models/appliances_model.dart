@@ -20,12 +20,12 @@ final applianceModel = [
     'price': '1000',
   },
   {
-    'category': 'Washing Mechine',
+    'category': 'Washing',
     'url': 'assets/images/homeAppli5.jpeg',
     'price': '1000',
   },
   {
-    'category': 'Washing Mechine',
+    'category': 'Washing',
     'url': 'assets/images/homeAppli6.png',
     'price': '1000',
   },

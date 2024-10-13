@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'index_select_state.dart';
 
-final boydressprovider = Provider<List<Map<String, String>>>((ref) {
+final aplianceprovider = Provider<List<Map<String, String>>>((ref) {
   final selectedCat = ref.watch(chipProvider);
   if (selectedCat == 'All') {
     return applianceModel;
