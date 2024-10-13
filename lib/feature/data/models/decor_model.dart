@@ -12,7 +12,7 @@ final decorModel = [
     'price': '1000',
   },
   {
-    'url': 'assets/images/decor4.webp',
+    'url': 'assets/images/decor4.jpg',
     'price': '1000',
   },
   {
