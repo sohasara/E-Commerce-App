@@ -1,4 +1,4 @@
-import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/detailes_page/my_grid.dart';
+import 'package:delivery_app_with_admin_pannel/feature/presentation/widgets/my_grid.dart';
 import 'package:delivery_app_with_admin_pannel/feature/presentation/widgets/my_container.dart';
 import 'package:delivery_app_with_admin_pannel/feature/presentation/widgets/my_text_feild.dart';
 
