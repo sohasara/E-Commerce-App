@@ -6,7 +6,7 @@ import 'index_select_state.dart';
 final shoeprovider = Provider<List<Map<String, String>>>((ref) {
   final selectedCat = ref.watch(chipProvider);
   if (selectedCat == 'All') {
-    return shoes;
+    return shoesModel;
   }
-  return shoes.where((shoe) => shoe['category']! == selectedCat).toList();
+  return shoesModel.where((shoe) => shoe['category']! == selectedCat).toList();
 });
