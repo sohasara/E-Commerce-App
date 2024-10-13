@@ -1,6 +1,6 @@
-import 'package:delivery_app_with_admin_pannel/feature/presentation/riverpod/index_select_state.dart';
+// import 'package:delivery_app_with_admin_pannel/feature/presentation/riverpod/index_select_state.dart';
 
-import 'package:delivery_app_with_admin_pannel/feature/presentation/widgets/chip_container.dart';
+// import 'package:delivery_app_with_admin_pannel/feature/presentation/widgets/chip_container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -11,7 +11,7 @@ class HomeDecor extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final categorySelect = ref.watch(chipProvider);
+    // final categorySelect = ref.watch(chipProvider);
     final decorFIlter = ref.watch(decorprovider);
     // final List<String> decorChips = [
     //   'All',
