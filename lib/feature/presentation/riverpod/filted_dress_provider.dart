@@ -16,17 +16,7 @@ final chipProviderFamily =
   },
 );
 
-// final listProviderFamily =
-//     Provider.family<List<Map<String, String>>, List<Map<String, String>>>(
-//         (ref, items) {
-//   final selectedCategory = ref.watch(chipProviderFamily('BagPage'));
-
-//   if (selectedCategory == 'All') {
-//     return items;
-//   }
-//   return items.where((item) => item['category'] == selectedCategory).toList();
-// });
-final listProviderFamily = Provider((ref) {
+final baglistProviderFamily = Provider((ref) {
   final selectedCategory = ref.watch(chipProviderFamily('BagPage'));
 
   if (selectedCategory == 'All') {
