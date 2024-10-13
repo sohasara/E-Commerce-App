@@ -10,6 +10,7 @@ class BagPage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final categorySelect = ref.watch(bagchipProvider);
+
     final bagFilter = ref.watch(bagprovider);
     final List<String> bagChips = [
       'All',

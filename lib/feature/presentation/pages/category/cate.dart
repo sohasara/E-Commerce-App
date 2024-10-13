@@ -8,15 +8,14 @@ import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/catego
 
 import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/category/shoe_page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 // import '../../riverpod/appliances_state.dart';
 
-class CategoryPage extends ConsumerWidget {
+class CategoryPage extends StatelessWidget {
   const CategoryPage({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     const catePage = [
       DressPage(),
       ShoePage(),
