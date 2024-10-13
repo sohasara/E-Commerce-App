@@ -40,7 +40,7 @@ class BagPage extends ConsumerWidget {
                         child: ChipContainer(
                           name: bagChips[index],
                           isSelected: categorySelect == bagChips[index],
-                          color: Colors.amber,
+                          color: Colors.black,
                         ),
                       );
                     }),
@@ -75,7 +75,7 @@ class BagPage extends ConsumerWidget {
                           style: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
-                            color: Colors.blue,
+                            color: Colors.black,
                           ),
                         ),
                       ],

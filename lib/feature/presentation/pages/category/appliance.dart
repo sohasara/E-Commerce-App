@@ -40,7 +40,7 @@ class AppliancePage extends ConsumerWidget {
                         child: ChipContainer(
                           name: applianceCHips[index],
                           isSelected: categorySelect == applianceCHips[index],
-                          color: Colors.amber,
+                          color: Colors.cyan,
                         ),
                       );
                     }),
@@ -75,7 +75,7 @@ class AppliancePage extends ConsumerWidget {
                           style: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
-                            color: Colors.blue,
+                            color: Colors.cyan,
                           ),
                         ),
                       ],
