@@ -19,7 +19,12 @@ class HomeDecor extends ConsumerWidget {
       'Walls',
     ];
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text(
+          'Decor Your Home',
+        ),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: SingleChildScrollView(

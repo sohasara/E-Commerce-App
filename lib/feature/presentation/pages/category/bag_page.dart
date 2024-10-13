@@ -19,7 +19,10 @@ class BagPage extends ConsumerWidget {
       'Small Bags',
     ];
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text('Find Your Favourites'),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: SingleChildScrollView(

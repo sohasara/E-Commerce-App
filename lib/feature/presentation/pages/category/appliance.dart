@@ -19,7 +19,10 @@ class AppliancePage extends ConsumerWidget {
       'Washing',
     ];
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text('Find the Best Electronics'),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: SingleChildScrollView(

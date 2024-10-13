@@ -19,7 +19,10 @@ class OrnamentsPage extends ConsumerWidget {
       'Rings',
     ];
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text('Choose Your Jewelry'),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: SingleChildScrollView(
