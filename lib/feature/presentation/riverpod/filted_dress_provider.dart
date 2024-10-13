@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class ChipStateNotifier extends StateNotifier<String> {
-  ChipStateNotifier() : super('All');
+  ChipStateNotifier(super.state);
 
   void selectCategory(String category) {
     state = category;
@@ -11,7 +11,7 @@ class ChipStateNotifier extends StateNotifier<String> {
 final chipProviderFamily =
     StateNotifierProvider.family<ChipStateNotifier, String, String>(
   (ref, categoryType) {
-    return ChipStateNotifier();
+    return ChipStateNotifier('All');
   },
 );
 
