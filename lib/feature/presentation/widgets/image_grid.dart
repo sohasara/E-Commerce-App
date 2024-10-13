@@ -18,7 +18,7 @@ class ImageGrid extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final selectedCategory = ref.watch(chipProviderFamily(title));
-    final filteredItems = ref.watch(listProviderFamily(items));
+    final filteredItems = ref.watch(listProviderFamily);
 
     return Padding(
       padding: const EdgeInsets.all(8.0),
