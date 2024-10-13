@@ -1,4 +1,5 @@
 import 'package:delivery_app_with_admin_pannel/feature/presentation/riverpod/boy_dress_state.dart';
+import 'package:delivery_app_with_admin_pannel/feature/presentation/riverpod/index_select_state.dart';
 
 import 'package:delivery_app_with_admin_pannel/feature/presentation/widgets/chip_container.dart';
 import 'package:flutter/material.dart';
@@ -9,7 +10,7 @@ class BoysDress extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final categorySelect = ref.watch(boychipProvider);
+    final categorySelect = ref.watch(chipProvider);
     final dressFilter = ref.watch(boydressprovider);
     final List<String> boysCat = [
       'All',
@@ -32,8 +33,8 @@ class BoysDress extends ConsumerWidget {
                     return GestureDetector(
                       onTap: () {
                         ref
-                            .read(boychipProvider.notifier)
-                            .selectedCategory(boysCat[index]);
+                            .read(chipProvider.notifier)
+                            .selectCategory(boysCat[index]);
                       },
                       child: ChipContainer(
                         name: boysCat[index],

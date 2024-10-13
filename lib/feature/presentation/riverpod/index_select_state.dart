@@ -8,7 +8,7 @@ class ChipStateNotifier extends StateNotifier<String> {
   }
 }
 
-final chipProviderFamily = StateNotifierProvider<ChipStateNotifier, String>(
+final chipProvider = StateNotifierProvider<ChipStateNotifier, String>(
   (ref) {
     return ChipStateNotifier('All');
   },

@@ -1,4 +1,5 @@
 import 'package:delivery_app_with_admin_pannel/feature/presentation/riverpod/girl_dress_page_cat.dart';
+import 'package:delivery_app_with_admin_pannel/feature/presentation/riverpod/index_select_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -17,7 +18,7 @@ class GirlsDress extends ConsumerWidget {
       'Borkha'
     ];
 
-    final selectedCategory = ref.watch(girlDressCategoryProvider);
+    final selectedCategory = ref.watch(chipProvider);
     final filteredDresses = ref.watch(dressesProvider);
 
     return Padding(
@@ -36,7 +37,7 @@ class GirlsDress extends ConsumerWidget {
                   return GestureDetector(
                     onTap: () {
                       ref
-                          .read(girlDressCategoryProvider.notifier)
+                          .read(chipProvider.notifier)
                           .selectCategory(girlDress[index]);
                     },
                     child: ChipContainer(
