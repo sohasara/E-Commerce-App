@@ -35,7 +35,7 @@ class ShoePage extends ConsumerWidget {
                     child: ChipContainer(
                       name: shoesname[index],
                       isSelected: categorySelect == shoesname[index],
-                      color: Colors.amber,
+                      color: Colors.indigo,
                     ),
                   );
                 }),
@@ -70,7 +70,7 @@ class ShoePage extends ConsumerWidget {
                       style: const TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
-                        color: Colors.blue,
+                        color: Colors.indigo,
                       ),
                     ),
                   ],
