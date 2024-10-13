@@ -18,12 +18,37 @@ class Cart extends StatelessWidget {
           ),
           Expanded(
             child: ListView.builder(
-              itemCount: 8,
+              itemCount: 20,
               itemBuilder: (context, index) {
-                return const ListTile(
-                  title: Text('Shoes'),
-                  trailing: CircleAvatar(),
-                  subtitle: Text('\$45'),
+                return Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: Container(
+                    padding: EdgeInsets.all(10),
+                    height: 80,
+                    decoration: BoxDecoration(
+                      color: Colors.pink.shade200,
+                      borderRadius: BorderRadius.circular(18),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        CircleAvatar(
+                          maxRadius: 35,
+                          backgroundImage: AssetImage(
+                            'assets/images/bag1.jpg',
+                          ),
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text('Price:4000'),
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
                 );
               },
             ),
