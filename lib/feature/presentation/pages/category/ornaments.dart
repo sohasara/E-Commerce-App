@@ -1,4 +1,3 @@
-import 'package:delivery_app_with_admin_pannel/feature/presentation/riverpod/index_select_state.dart';
 import 'package:delivery_app_with_admin_pannel/feature/presentation/riverpod/ornaments_state.dart';
 
 import 'package:delivery_app_with_admin_pannel/feature/presentation/widgets/chip_container.dart';
@@ -10,7 +9,7 @@ class OrnamentsPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final categorySelect = ref.watch(chipProvider);
+    final categorySelect = ref.watch(oramentchipProvider);
     final ornamentFilter = ref.watch(ornamentsprovider);
     final List<String> ornamentChips = [
       'All',
@@ -37,7 +36,7 @@ class OrnamentsPage extends ConsumerWidget {
                       return GestureDetector(
                         onTap: () {
                           ref
-                              .read(chipProvider.notifier)
+                              .read(oramentchipProvider.notifier)
                               .selectCategory(ornamentChips[index]);
                         },
                         child: ChipContainer(

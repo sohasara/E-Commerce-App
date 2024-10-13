@@ -3,14 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../riverpod/decor_state.dart';
-import '../../riverpod/index_select_state.dart';
 
 class HomeDecor extends ConsumerWidget {
   const HomeDecor({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final categorySelect = ref.watch(chipProvider);
+    final categorySelect = ref.watch(decorchipProvider);
     final decorFIlter = ref.watch(decorprovider);
     final List<String> decorChips = [
       'All',
@@ -39,7 +38,7 @@ class HomeDecor extends ConsumerWidget {
                       return GestureDetector(
                         onTap: () {
                           ref
-                              .read(chipProvider.notifier)
+                              .read(decorchipProvider.notifier)
                               .selectCategory(decorChips[index]);
                         },
                         child: ChipContainer(

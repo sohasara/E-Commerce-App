@@ -1,16 +1,28 @@
 import 'package:delivery_app_with_admin_pannel/feature/data/models/girl_dress_model.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'index_select_state.dart';
+class GirlStateNotifier extends StateNotifier<String> {
+  GirlStateNotifier(super.state);
 
-final dressesProvider = Provider<List<Map<String, String>>>((ref) {
-  final selectedCategory = ref.watch(chipProvider);
+  void selectCategory(String category) {
+    state = category;
+  }
+}
 
-  if (selectedCategory == 'All') {
+final girlchipProvider = StateNotifierProvider<GirlStateNotifier, String>(
+  (ref) {
+    return GirlStateNotifier('All');
+  },
+);
+
+final girldressesProvider = Provider<List<Map<String, String>>>((ref) {
+  final girlselectedCategory = ref.watch(girlchipProvider);
+
+  if (girlselectedCategory == 'All') {
     return girldress;
   }
 
   return girldress
-      .where((dress) => dress['category']! == selectedCategory)
+      .where((dress) => dress['category']! == girlselectedCategory)
       .toList();
 });
