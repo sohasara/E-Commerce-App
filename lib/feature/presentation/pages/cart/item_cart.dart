@@ -34,7 +34,7 @@ class Cart extends StatelessWidget {
                       children: [
                         Checkbox(value: true, onChanged: (value) {}),
                         CircleAvatar(
-                          maxRadius: 35,
+                          maxRadius: 39,
                           backgroundImage: AssetImage(
                             'assets/images/bag1.jpg',
                           ),
