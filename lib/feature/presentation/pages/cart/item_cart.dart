@@ -18,21 +18,21 @@ class Cart extends StatelessWidget {
           ),
           Expanded(
             child: ListView.builder(
-              itemCount: 20,
+              itemCount: 10,
               itemBuilder: (context, index) {
                 return Padding(
-                  padding: const EdgeInsets.all(15.0),
+                  padding: const EdgeInsets.all(10.0),
                   child: Container(
-                    padding: EdgeInsets.all(10),
-                    height: 80,
+                    padding: EdgeInsets.all(12),
+                    height: 100,
                     decoration: BoxDecoration(
-                      color: Colors.pink.shade200,
+                      color: Colors.pink.shade300,
                       borderRadius: BorderRadius.circular(18),
                     ),
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
+                        Checkbox(value: true, onChanged: (value) {}),
                         CircleAvatar(
                           maxRadius: 35,
                           backgroundImage: AssetImage(
@@ -43,9 +43,23 @@ class Cart extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('Price:4000'),
+                            Text(
+                              'Price: 4000',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                              ),
+                            ),
                           ],
-                        )
+                        ),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.delete,
+                            color: Colors.red.shade900,
+                            size: 33,
+                          ),
+                        ),
                       ],
                     ),
                   ),
