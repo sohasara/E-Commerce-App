@@ -9,6 +9,7 @@ class Cart extends StatelessWidget {
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {},
         label: Text('Check Out'),
+        backgroundColor: Colors.amber,
       ),
       body: Column(
         children: [
