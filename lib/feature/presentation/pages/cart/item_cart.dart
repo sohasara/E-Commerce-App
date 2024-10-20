@@ -8,7 +8,13 @@ class Cart extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {},
-        label: Text('Check Out'),
+        label: Text(
+          'Check Out',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
         backgroundColor: Colors.amber,
       ),
       body: Column(
