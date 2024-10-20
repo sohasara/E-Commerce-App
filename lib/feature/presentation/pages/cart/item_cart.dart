@@ -6,11 +6,9 @@ class Cart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton.large(
+      floatingActionButton: FloatingActionButton.extended(
         onPressed: () {},
-        child: Row(
-          children: [],
-        ),
+        label: Text('Check Out'),
       ),
       body: Column(
         children: [
