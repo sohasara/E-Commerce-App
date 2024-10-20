@@ -13,13 +13,32 @@ class Cart extends StatelessWidget {
       ),
       body: Column(
         children: [
-          const Text(
-            'Item Cart',
-            style: TextStyle(
-              fontSize: 25,
-              fontWeight: FontWeight.bold,
-              color: Colors.pink,
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              const Text(
+                'Item Cart',
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.pink,
+                ),
+              ),
+              Row(
+                children: [
+                  Checkbox(
+                    value: false,
+                    onChanged: (value) {},
+                  ),
+                  Text(
+                    'ALL',
+                    style: TextStyle(
+                      fontSize: 18,
+                    ),
+                  ),
+                ],
+              ),
+            ],
           ),
           Expanded(
             child: ListView.builder(
@@ -31,7 +50,8 @@ class Cart extends StatelessWidget {
                     padding: EdgeInsets.all(12),
                     height: 100,
                     decoration: BoxDecoration(
-                      color: Colors.pink.shade300,
+                      // color: Colors.pink.shade300,
+                      border: Border.all(color: Colors.pink, width: 2),
                       borderRadius: BorderRadius.circular(18),
                     ),
                     child: Row(
@@ -51,8 +71,9 @@ class Cart extends StatelessWidget {
                             Text(
                               'Price: 4000',
                               style: TextStyle(
-                                color: Colors.white,
+                                color: Colors.pink,
                                 fontSize: 18,
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
                           ],
