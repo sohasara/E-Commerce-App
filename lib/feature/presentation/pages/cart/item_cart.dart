@@ -6,6 +6,12 @@ class Cart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton.large(
+        onPressed: () {},
+        child: Row(
+          children: [],
+        ),
+      ),
       body: Column(
         children: [
           const Text(
