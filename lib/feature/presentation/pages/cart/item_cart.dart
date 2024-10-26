@@ -19,6 +19,9 @@ class Cart extends StatelessWidget {
       ),
       body: Column(
         children: [
+          SizedBox(
+            height: 20,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
@@ -45,6 +48,9 @@ class Cart extends StatelessWidget {
                 ],
               ),
             ],
+          ),
+          SizedBox(
+            height: 15,
           ),
           Expanded(
             child: ListView.builder(
