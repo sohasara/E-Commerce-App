@@ -63,7 +63,7 @@ class Cart extends StatelessWidget {
                     height: 100,
                     decoration: BoxDecoration(
                       // color: Colors.pink.shade300,
-                      border: Border.all(color: Colors.pink, width: 2),
+                      border: Border.all(color: Colors.pink, width: 1.2),
                       borderRadius: BorderRadius.circular(18),
                     ),
                     child: Row(
