@@ -17,6 +17,14 @@ class Cart extends StatelessWidget {
               ),
             ),
           ),
+          Container(
+            height: 100,
+            width: 400,
+            decoration: BoxDecoration(
+              border: Border.all(),
+              borderRadius: BorderRadius.circular(10),
+            ),
+          )
         ],
       ),
     );
