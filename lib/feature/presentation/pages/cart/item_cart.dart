@@ -24,7 +24,7 @@ class Cart extends StatelessWidget {
               border: Border.all(),
               borderRadius: BorderRadius.circular(10),
             ),
-          )
+          ),
         ],
       ),
     );
