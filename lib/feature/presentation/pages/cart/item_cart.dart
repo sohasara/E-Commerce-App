@@ -34,6 +34,7 @@ class Cart extends StatelessWidget {
                 child: Column(
                   children: [
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         SizedBox(
                           height: 145,
@@ -46,7 +47,44 @@ class Cart extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Text("Vintage Bag ")
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          "Vintage Bag ",
+                          style: TextStyle(
+                            fontSize: 20,
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.add_rounded,
+                              size: 30,
+                              color: Colors.green,
+                            ),
+                            const SizedBox(
+                              width: 10,
+                            ),
+                            Text(
+                              "0",
+                              style: TextStyle(
+                                fontSize: 23,
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 10,
+                            ),
+                            Icon(
+                              Icons.remove,
+                              color: Colors.red,
+                              size: 30,
+                            )
+                          ],
+                        ),
                       ],
                     )
                   ],
