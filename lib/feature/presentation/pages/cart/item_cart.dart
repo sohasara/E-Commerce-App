@@ -24,12 +24,30 @@ class Cart extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          Container(
-            height: 150,
+          SizedBox(
+            height: 160,
             width: 400,
-            decoration: BoxDecoration(
-              border: Border.all(width: 0.5),
-              borderRadius: BorderRadius.circular(10),
+            child: Card(
+              elevation: 3,
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      SizedBox(
+                        height: 145,
+                        width: 130,
+                        child: Card(
+                          elevation: 8,
+                          child: Image.asset(
+                            "assets/images/bag1.jpg",
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
             ),
           ),
         ],
