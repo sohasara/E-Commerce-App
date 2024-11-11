@@ -8,20 +8,27 @@ class Cart extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
+          const SizedBox(
+            height: 10,
+          ),
           Center(
             child: Text(
               'Item Cart',
               style: TextStyle(
-                fontSize: 25,
-                fontWeight: FontWeight.bold,
+                fontSize: 28,
+                fontWeight: FontWeight.w800,
+                color: Colors.purple,
               ),
             ),
           ),
+          const SizedBox(
+            height: 20,
+          ),
           Container(
-            height: 100,
+            height: 150,
             width: 400,
             decoration: BoxDecoration(
-              border: Border.all(),
+              border: Border.all(width: 0.5),
               borderRadius: BorderRadius.circular(10),
             ),
           ),
