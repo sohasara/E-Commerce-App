@@ -24,29 +24,63 @@ class Cart extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          SizedBox(
-            height: 160,
-            width: 400,
-            child: Card(
-              elevation: 3,
-              child: Column(
-                children: [
-                  Row(
-                    children: [
-                      SizedBox(
-                        height: 145,
-                        width: 130,
-                        child: Card(
-                          elevation: 8,
-                          child: Image.asset(
-                            "assets/images/bag1.jpg",
-                            fit: BoxFit.cover,
+          Padding(
+            padding: const EdgeInsets.only(bottom: 10.0),
+            child: SizedBox(
+              height: 160,
+              width: 400,
+              child: Card(
+                elevation: 3,
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        SizedBox(
+                          height: 145,
+                          width: 130,
+                          child: Card(
+                            elevation: 2,
+                            child: Image.asset(
+                              "assets/images/bag1.jpg",
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
-                      ),
-                    ],
-                  )
-                ],
+                        Text("Vintage Bag ")
+                      ],
+                    )
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 10.0),
+            child: SizedBox(
+              height: 160,
+              width: 400,
+              child: Card(
+                elevation: 3,
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        SizedBox(
+                          height: 145,
+                          width: 130,
+                          child: Card(
+                            elevation: 2,
+                            child: Image.asset(
+                              "assets/images/bag1.jpg",
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        Text("Vintage Bag ")
+                      ],
+                    )
+                  ],
+                ),
               ),
             ),
           ),
