@@ -22,12 +22,9 @@ class Cart extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(
-            height: 20,
-          ),
           Expanded(
             child: Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(10.0),
               child: ListView.builder(
                 itemCount: 7,
                 itemBuilder: (context, index) {
