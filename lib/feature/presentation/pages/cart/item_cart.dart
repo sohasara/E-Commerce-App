@@ -68,10 +68,13 @@ class Cart extends StatelessWidget {
                                   ),
                                   Row(
                                     children: [
-                                      Icon(
-                                        Icons.add_rounded,
-                                        size: 30,
-                                        color: Colors.green,
+                                      IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          Icons.add_rounded,
+                                          size: 30,
+                                          color: Colors.green,
+                                        ),
                                       ),
                                       const SizedBox(
                                         width: 10,
@@ -85,11 +88,14 @@ class Cart extends StatelessWidget {
                                       const SizedBox(
                                         width: 10,
                                       ),
-                                      Icon(
-                                        Icons.remove,
-                                        color: Colors.red,
-                                        size: 30,
-                                      )
+                                      IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          Icons.remove,
+                                          size: 30,
+                                          color: Colors.red,
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 ],
