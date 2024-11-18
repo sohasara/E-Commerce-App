@@ -3,7 +3,7 @@ import 'package:delivery_app_with_admin_pannel/feature/presentation/riverpod/gir
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../widgets/chip_container.dart';
+import '../../../widgets/chip_container.dart';
 
 class GirlsDress extends ConsumerWidget {
   const GirlsDress({super.key});
