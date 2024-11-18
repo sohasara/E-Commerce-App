@@ -56,7 +56,7 @@ class ProfilePage extends StatelessWidget {
                 topRight: Radius.circular(50),
               ),
             ),
-          )
+          ),
         ],
       ),
     );
