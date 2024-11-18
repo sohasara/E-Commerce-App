@@ -1,4 +1,4 @@
-import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/log_in.dart';
+import 'package:delivery_app_with_admin_pannel/auth/log_in.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
