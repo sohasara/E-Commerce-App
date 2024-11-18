@@ -58,10 +58,10 @@ class ProfilePage extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.purple,
                 borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(60),
-                  topRight: Radius.circular(60),
-                  bottomLeft: Radius.circular(60),
-                  bottomRight: Radius.circular(60),
+                  topLeft: Radius.circular(30),
+                  topRight: Radius.circular(30),
+                  bottomLeft: Radius.circular(30),
+                  bottomRight: Radius.circular(30),
                 ),
               ),
             )
