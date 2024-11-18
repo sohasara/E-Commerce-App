@@ -12,8 +12,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../riverpod/girl_dress_state.dart';
 
-// import '../../riverpod/appliances_state.dart';
-
 class CategoryPage extends ConsumerWidget {
   const CategoryPage({super.key});
 
