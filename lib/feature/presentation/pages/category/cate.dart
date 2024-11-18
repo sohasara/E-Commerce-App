@@ -8,14 +8,17 @@ import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/catego
 
 import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/category/shoe_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../../riverpod/girl_dress_state.dart';
 
 // import '../../riverpod/appliances_state.dart';
 
-class CategoryPage extends StatelessWidget {
+class CategoryPage extends ConsumerWidget {
   const CategoryPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     const catePage = [
       DressPage(),
       ShoePage(),
@@ -55,9 +58,7 @@ class CategoryPage extends StatelessWidget {
                   final category = categories[index];
                   return GestureDetector(
                     onTap: () {
-                      // ref
-                      //     .read(applichipProvider.notifier)
-                      //     .selectCategory('All');
+                      ref.read(girlchipProvider.notifier).selectCategory('All');
                       Navigator.push(
                         context,
                         MaterialPageRoute(
