@@ -3,22 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'girl_dress_state.dart';
 
-// class DecorStateNotifier extends StateNotifier<String> {
-//   DecorStateNotifier(super.state);
-
-//   void selectCategory(String category) {
-//     state = category;
-//   }
-// }
-
-// final decorchipProvider = StateNotifierProvider<DecorStateNotifier, String>(
-//   (ref) {
-//     return DecorStateNotifier('All');
-//   },
-// );
-
 final decorprovider = Provider<List<Map<String, String>>>((ref) {
-  final selectedCat = ref.watch(girlchipProvider);
+  final selectedCat = ref.watch(chipProvider);
   if (selectedCat == 'All') {
     return decorModel;
   }

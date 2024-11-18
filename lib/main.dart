@@ -2,8 +2,6 @@ import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/log_in
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-//import 'feature/presentation/pages/detailes_page/dress.dart';
-
 void main() {
   runApp(const ProviderScope(child: MyApp()));
 }

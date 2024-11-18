@@ -11,7 +11,7 @@ class AppliancePage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final categorySelect = ref.watch(girlchipProvider);
+    final categorySelect = ref.watch(chipProvider);
     final applianceFilter = ref.watch(aplianceprovider);
     final List<String> applianceCHips = [
       'All',
@@ -38,7 +38,7 @@ class AppliancePage extends ConsumerWidget {
                       return GestureDetector(
                         onTap: () {
                           ref
-                              .read(girlchipProvider.notifier)
+                              .read(chipProvider.notifier)
                               .selectCategory(applianceCHips[index]);
                         },
                         child: ChipContainer(

@@ -56,7 +56,7 @@ class CategoryPage extends ConsumerWidget {
                   final category = categories[index];
                   return GestureDetector(
                     onTap: () {
-                      ref.read(girlchipProvider.notifier).selectCategory('All');
+                      ref.read(chipProvider.notifier).selectCategory('All');
                       Navigator.push(
                         context,
                         MaterialPageRoute(

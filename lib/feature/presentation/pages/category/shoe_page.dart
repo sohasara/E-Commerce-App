@@ -10,7 +10,7 @@ class ShoePage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final categorySelect = ref.watch(girlchipProvider);
+    final categorySelect = ref.watch(chipProvider);
     final shoeFilter = ref.watch(shoeprovider);
     final shoesname = ['All', 'Slippers', 'Sneakers', 'Hills', 'Casuals'];
     return Scaffold(
@@ -29,7 +29,7 @@ class ShoePage extends ConsumerWidget {
                   return GestureDetector(
                     onTap: () {
                       ref
-                          .read(girlchipProvider.notifier)
+                          .read(chipProvider.notifier)
                           .selectCategory(shoesname[index]);
                     },
                     child: ChipContainer(

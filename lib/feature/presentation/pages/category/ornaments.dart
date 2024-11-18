@@ -11,7 +11,7 @@ class OrnamentsPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final categorySelect = ref.watch(girlchipProvider);
+    final categorySelect = ref.watch(chipProvider);
     final ornamentFilter = ref.watch(ornamentsprovider);
     final List<String> ornamentChips = [
       'All',
@@ -38,7 +38,7 @@ class OrnamentsPage extends ConsumerWidget {
                       return GestureDetector(
                         onTap: () {
                           ref
-                              .read(girlchipProvider.notifier)
+                              .read(chipProvider.notifier)
                               .selectCategory(ornamentChips[index]);
                         },
                         child: ChipContainer(

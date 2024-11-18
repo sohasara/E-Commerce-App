@@ -18,7 +18,7 @@ class GirlsDress extends ConsumerWidget {
       'Borkha'
     ];
 
-    final selectedCategory = ref.watch(girlchipProvider);
+    final selectedCategory = ref.watch(chipProvider);
     final filteredDresses = ref.watch(girldressesProvider);
 
     return Padding(
@@ -37,7 +37,7 @@ class GirlsDress extends ConsumerWidget {
                   return GestureDetector(
                     onTap: () {
                       ref
-                          .read(girlchipProvider.notifier)
+                          .read(chipProvider.notifier)
                           .selectCategory(girlDress[index]);
                     },
                     child: ChipContainer(

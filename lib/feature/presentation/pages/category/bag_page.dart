@@ -11,7 +11,7 @@ class BagPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final categorySelect = ref.watch(girlchipProvider);
+    final categorySelect = ref.watch(chipProvider);
 
     final bagFilter = ref.watch(bagprovider);
     final List<String> bagChips = [
@@ -39,7 +39,7 @@ class BagPage extends ConsumerWidget {
                       return GestureDetector(
                         onTap: () {
                           ref
-                              .read(girlchipProvider.notifier)
+                              .read(chipProvider.notifier)
                               .selectCategory(bagChips[index]);
                         },
                         child: ChipContainer(

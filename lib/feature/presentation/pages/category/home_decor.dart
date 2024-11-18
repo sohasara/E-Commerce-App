@@ -10,7 +10,7 @@ class HomeDecor extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final categorySelect = ref.watch(girlchipProvider);
+    final categorySelect = ref.watch(chipProvider);
     final decorFIlter = ref.watch(decorprovider);
     final List<String> decorChips = [
       'All',
@@ -39,7 +39,7 @@ class HomeDecor extends ConsumerWidget {
                       return GestureDetector(
                         onTap: () {
                           ref
-                              .read(girlchipProvider.notifier)
+                              .read(chipProvider.notifier)
                               .selectCategory(decorChips[index]);
                         },
                         child: ChipContainer(
