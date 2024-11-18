@@ -1,22 +1,24 @@
 import 'package:delivery_app_with_admin_pannel/feature/data/models/shoes_model.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class ShoeStateNotifier extends StateNotifier<String> {
-  ShoeStateNotifier(super.state);
+import 'girl_dress_state.dart';
 
-  void selectCategory(String category) {
-    state = category;
-  }
-}
+// class ShoeStateNotifier extends StateNotifier<String> {
+//   ShoeStateNotifier(super.state);
 
-final shoechipProvider = StateNotifierProvider<ShoeStateNotifier, String>(
-  (ref) {
-    return ShoeStateNotifier('All');
-  },
-);
+//   void selectCategory(String category) {
+//     state = category;
+//   }
+// }
+
+// final shoechipProvider = StateNotifierProvider<ShoeStateNotifier, String>(
+//   (ref) {
+//     return ShoeStateNotifier('All');
+//   },
+// );
 
 final shoeprovider = Provider<List<Map<String, String>>>((ref) {
-  final selectedCat = ref.watch(shoechipProvider);
+  final selectedCat = ref.watch(girlchipProvider);
   if (selectedCat == 'All') {
     return shoesModel;
   }

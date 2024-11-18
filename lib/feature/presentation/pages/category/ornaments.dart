@@ -4,12 +4,14 @@ import 'package:delivery_app_with_admin_pannel/feature/presentation/widgets/chip
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../riverpod/girl_dress_state.dart';
+
 class OrnamentsPage extends ConsumerWidget {
   const OrnamentsPage({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final categorySelect = ref.watch(oramentchipProvider);
+    final categorySelect = ref.watch(girlchipProvider);
     final ornamentFilter = ref.watch(ornamentsprovider);
     final List<String> ornamentChips = [
       'All',
@@ -36,7 +38,7 @@ class OrnamentsPage extends ConsumerWidget {
                       return GestureDetector(
                         onTap: () {
                           ref
-                              .read(oramentchipProvider.notifier)
+                              .read(girlchipProvider.notifier)
                               .selectCategory(ornamentChips[index]);
                         },
                         child: ChipContainer(

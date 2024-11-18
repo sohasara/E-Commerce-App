@@ -1,22 +1,24 @@
 import 'package:delivery_app_with_admin_pannel/feature/data/models/bag_model.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class BagStateNotifier extends StateNotifier<String> {
-  BagStateNotifier(super.state);
+import 'girl_dress_state.dart';
 
-  void selectCategory(String category) {
-    state = category;
-  }
-}
+// class BagStateNotifier extends StateNotifier<String> {
+//   BagStateNotifier(super.state);
 
-final bagchipProvider = StateNotifierProvider<BagStateNotifier, String>(
-  (ref) {
-    return BagStateNotifier('All');
-  },
-);
+//   void selectCategory(String category) {
+//     state = category;
+//   }
+// }
+
+// final bagchipProvider = StateNotifierProvider<BagStateNotifier, String>(
+//   (ref) {
+//     return BagStateNotifier('All');
+//   },
+// );
 
 final bagprovider = Provider<List<Map<String, String>>>((ref) {
-  final selectedCat = ref.watch(bagchipProvider);
+  final selectedCat = ref.watch(girlchipProvider);
   if (selectedCat == 'All') {
     return bagsModel;
   }

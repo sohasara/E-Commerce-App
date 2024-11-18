@@ -4,12 +4,14 @@ import 'package:delivery_app_with_admin_pannel/feature/presentation/widgets/chip
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../riverpod/girl_dress_state.dart';
+
 class BagPage extends ConsumerWidget {
   const BagPage({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final categorySelect = ref.watch(bagchipProvider);
+    final categorySelect = ref.watch(girlchipProvider);
 
     final bagFilter = ref.watch(bagprovider);
     final List<String> bagChips = [
@@ -37,7 +39,7 @@ class BagPage extends ConsumerWidget {
                       return GestureDetector(
                         onTap: () {
                           ref
-                              .read(bagchipProvider.notifier)
+                              .read(girlchipProvider.notifier)
                               .selectCategory(bagChips[index]);
                         },
                         child: ChipContainer(

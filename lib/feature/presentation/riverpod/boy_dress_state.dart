@@ -2,21 +2,23 @@ import 'package:delivery_app_with_admin_pannel/feature/data/models/boy_dress_mod
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class BoyStateNotifier extends StateNotifier<String> {
-  BoyStateNotifier(super.state);
+import 'girl_dress_state.dart';
 
-  void selectCategory(String category) {
-    state = category;
-  }
-}
+// class BoyStateNotifier extends StateNotifier<String> {
+//   BoyStateNotifier(super.state);
 
-final boychipProvider = StateNotifierProvider<BoyStateNotifier, String>(
-  (ref) {
-    return BoyStateNotifier('All');
-  },
-);
+//   void selectCategory(String category) {
+//     state = category;
+//   }
+// }
+
+// final boychipProvider = StateNotifierProvider<BoyStateNotifier, String>(
+//   (ref) {
+//     return BoyStateNotifier('All');
+//   },
+// );
 final boydressprovider = Provider<List<Map<String, String>>>((ref) {
-  final selectedCat = ref.watch(boychipProvider);
+  final selectedCat = ref.watch(girlchipProvider);
   if (selectedCat == 'All') {
     return boyDress;
   }

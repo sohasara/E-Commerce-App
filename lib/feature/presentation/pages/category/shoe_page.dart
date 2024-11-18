@@ -3,12 +3,14 @@ import 'package:delivery_app_with_admin_pannel/feature/presentation/widgets/chip
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../riverpod/girl_dress_state.dart';
+
 class ShoePage extends ConsumerWidget {
   const ShoePage({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final categorySelect = ref.watch(shoechipProvider);
+    final categorySelect = ref.watch(girlchipProvider);
     final shoeFilter = ref.watch(shoeprovider);
     final shoesname = ['All', 'Slippers', 'Sneakers', 'Hills', 'Casuals'];
     return Scaffold(
@@ -27,7 +29,7 @@ class ShoePage extends ConsumerWidget {
                   return GestureDetector(
                     onTap: () {
                       ref
-                          .read(shoechipProvider.notifier)
+                          .read(girlchipProvider.notifier)
                           .selectCategory(shoesname[index]);
                     },
                     child: ChipContainer(
