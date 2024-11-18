@@ -42,6 +42,12 @@ class ProfilePage extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
+                Text(
+                  "sohasara@gamil.com",
+                  style: TextStyle(
+                    fontSize: 20,
+                  ),
+                ),
               ],
             ),
             // const SizedBox(
@@ -52,8 +58,10 @@ class ProfilePage extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.purple,
                 borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(80),
-                  topRight: Radius.circular(80),
+                  topLeft: Radius.circular(60),
+                  topRight: Radius.circular(60),
+                  bottomLeft: Radius.circular(60),
+                  bottomRight: Radius.circular(60),
                 ),
               ),
             )
