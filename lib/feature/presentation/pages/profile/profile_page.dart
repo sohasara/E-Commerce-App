@@ -12,37 +12,33 @@ class ProfilePage extends StatelessWidget {
           const SizedBox(
             height: 13,
           ),
-          Column(
-            children: [
-              Center(
-                child: Container(
-                  height: 120,
-                  width: 120,
-                  decoration: BoxDecoration(
-                    color: Colors.purple[300],
-                    borderRadius: BorderRadius.circular(100),
-                  ),
-                  child: Icon(
-                    Icons.person_3_rounded,
-                    size: 100,
-                    color: Colors.white,
-                  ),
-                ),
+          Center(
+            child: Container(
+              height: 120,
+              width: 120,
+              decoration: BoxDecoration(
+                color: Colors.purple[300],
+                borderRadius: BorderRadius.circular(100),
               ),
-              Text(
-                "Nadia Islam Rupa",
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
+              child: Icon(
+                Icons.person_3_rounded,
+                size: 100,
+                color: Colors.white,
               ),
-              Text(
-                "sohasara@gamil.com",
-                style: TextStyle(
-                  fontSize: 18,
-                ),
-              ),
-            ],
+            ),
+          ),
+          Text(
+            "Nadia Islam Rupa",
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          Text(
+            "sohasara@gamil.com",
+            style: TextStyle(
+              fontSize: 18,
+            ),
           ),
           const SizedBox(
             height: 22,
