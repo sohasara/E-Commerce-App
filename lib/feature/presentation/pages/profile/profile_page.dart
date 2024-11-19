@@ -16,8 +16,8 @@ class ProfilePage extends StatelessWidget {
             children: [
               Center(
                 child: Container(
-                  height: 130,
-                  width: 130,
+                  height: 120,
+                  width: 120,
                   decoration: BoxDecoration(
                     color: Colors.purple[300],
                     borderRadius: BorderRadius.circular(100),
@@ -39,13 +39,13 @@ class ProfilePage extends StatelessWidget {
               Text(
                 "sohasara@gamil.com",
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 18,
                 ),
               ),
             ],
           ),
           const SizedBox(
-            height: 10,
+            height: 22,
           ),
           Container(
             height: 450,
