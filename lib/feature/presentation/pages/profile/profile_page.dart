@@ -45,12 +45,18 @@ class ProfilePage extends StatelessWidget {
           ),
           Container(
             height: 450,
+            width: double.infinity,
             decoration: BoxDecoration(
               color: Colors.purple,
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(70),
                 topRight: Radius.circular(70),
               ),
+            ),
+            child: Column(
+              children: [
+                Text("data"),
+              ],
             ),
           ),
         ],
