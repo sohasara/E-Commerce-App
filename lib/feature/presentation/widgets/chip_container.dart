@@ -26,8 +26,9 @@ class ChipContainer extends StatelessWidget {
           child: Text(
             name,
             style: TextStyle(
+              fontSize: 15,
               color: isSelected ? Colors.white : Colors.black,
-              fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+              fontWeight: isSelected ? FontWeight.w900 : FontWeight.bold,
             ),
           ),
         ),

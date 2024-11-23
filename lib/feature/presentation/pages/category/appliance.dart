@@ -22,7 +22,12 @@ class AppliancePage extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Find the Best Electronics'),
+        title: Text(
+          'Find the Best Electronics',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -63,7 +68,7 @@ class AppliancePage extends ConsumerWidget {
                 itemBuilder: (context, index) {
                   final appliance = applianceFilter[index];
                   return Card(
-                    elevation: 5,
+                    elevation: 2,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
