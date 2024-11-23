@@ -15,7 +15,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(),
       home: const LogIn(),
-      // home: const DressPage(),
     );
   }
 }
+
+///home/nadiaislam/Downloads/android-studio/bin/studio.sh
