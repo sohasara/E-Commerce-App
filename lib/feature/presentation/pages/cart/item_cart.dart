@@ -45,7 +45,7 @@ class Cart extends StatelessWidget {
                       ),
                       child: SizedBox(
                         height: 160,
-                        width: 400,
+                        width: 420,
                         child: Card(
                           elevation: 2,
                           child: Column(
