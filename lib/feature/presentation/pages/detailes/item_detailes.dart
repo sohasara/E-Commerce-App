@@ -24,7 +24,9 @@ class DetailedItem extends StatelessWidget {
             width: double.infinity,
             fit: BoxFit.fitWidth,
           ),
-          Text("data"),
+          Text(
+            "data",
+          ),
         ],
       ),
     );
