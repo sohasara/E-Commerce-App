@@ -31,6 +31,14 @@ class DetailedItem extends StatelessWidget {
               style: TextStyle(),
             ),
           ),
+          Container(
+            height: 100,
+            width: 300,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: Colors.green[200],
+            ),
+          ),
         ],
       ),
     );
