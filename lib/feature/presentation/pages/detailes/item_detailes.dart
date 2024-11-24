@@ -24,8 +24,12 @@ class DetailedItem extends StatelessWidget {
             width: double.infinity,
             fit: BoxFit.fitWidth,
           ),
-          Text(
-            "Kotlin provides several frameworks designed for backend development, including the well-known Spring Boot and Ktor. These frameworks benefit from Kotlin's expressive code, which simplifies the task of writing concise, maintainable source code.",
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              "Kotlin provides several frameworks designed for backend development, including the well-known Spring Boot and Ktor. These frameworks benefit from Kotlin's expressive code, which simplifies the task of writing concise, maintainable source code.",
+              style: TextStyle(),
+            ),
           ),
         ],
       ),
