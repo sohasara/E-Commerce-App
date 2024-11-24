@@ -1,3 +1,4 @@
+import 'package:delivery_app_with_admin_pannel/feature/presentation/pages/detailes/item_detailes.dart';
 import 'package:delivery_app_with_admin_pannel/feature/presentation/widgets/chip_container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -63,27 +64,37 @@ class HomeDecor extends ConsumerWidget {
                 itemCount: decorFIlter.length,
                 itemBuilder: (context, index) {
                   final ornament = decorFIlter[index];
-                  return Card(
-                    elevation: 5,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Image.asset(
-                          ornament['url']!,
-                          height: 150,
-                          width: 150,
-                          fit: BoxFit.cover,
+                  return GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => DetailedItem(),
                         ),
-                        const SizedBox(height: 10),
-                        Text(
-                          'Price: ${ornament['price']}',
-                          style: const TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.purple,
+                      );
+                    },
+                    child: Card(
+                      elevation: 5,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            ornament['url']!,
+                            height: 150,
+                            width: 150,
+                            fit: BoxFit.cover,
                           ),
-                        ),
-                      ],
+                          const SizedBox(height: 10),
+                          Text(
+                            'Price: ${ornament['price']}',
+                            style: const TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.purple,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   );
                 },
