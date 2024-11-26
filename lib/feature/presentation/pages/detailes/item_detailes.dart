@@ -34,15 +34,29 @@ class DetailedItem extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text("\$450"),
+              Text(
+                "\$450",
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
               Container(
-                height: 70,
+                height: 60,
                 width: 250,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   color: Colors.green[200],
                 ),
-                child: Center(child: Text("ADD TO CART")),
+                child: Center(
+                  child: Text(
+                    "ADD TO CART",
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
               ),
             ],
           ),
