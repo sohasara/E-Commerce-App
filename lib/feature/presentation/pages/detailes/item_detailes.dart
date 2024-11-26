@@ -37,7 +37,7 @@ class DetailedItem extends StatelessWidget {
               Text(
                 "\$450",
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 30,
                   fontWeight: FontWeight.bold,
                 ),
               ),
