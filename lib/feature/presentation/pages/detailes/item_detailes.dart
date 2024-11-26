@@ -6,7 +6,9 @@ class DetailedItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.green[50],
       appBar: AppBar(
+        backgroundColor: Colors.green[50],
         title: Text(
           "Wallmates",
           style: TextStyle(
@@ -25,11 +27,16 @@ class DetailedItem extends StatelessWidget {
             fit: BoxFit.fitWidth,
           ),
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(12.0),
             child: Text(
               "Kotlin provides several frameworks designed for backend development, including the well-known Spring Boot and Ktor. These frameworks benefit from Kotlin's expressive code, which simplifies the task of writing concise, maintainable source code.",
-              style: TextStyle(),
+              style: TextStyle(
+                fontSize: 15,
+              ),
             ),
+          ),
+          const SizedBox(
+            height: 20,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -43,7 +50,7 @@ class DetailedItem extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                width: 20,
+                width: 30,
               ),
               Row(
                 children: [
@@ -71,6 +78,9 @@ class DetailedItem extends StatelessWidget {
                 ],
               )
             ],
+          ),
+          const SizedBox(
+            height: 20,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
