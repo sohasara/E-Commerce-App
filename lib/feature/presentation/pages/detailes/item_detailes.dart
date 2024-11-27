@@ -6,9 +6,9 @@ class DetailedItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green[50],
+      backgroundColor: Colors.purple[50],
       appBar: AppBar(
-        backgroundColor: Colors.green[50],
+        backgroundColor: Colors.purple[50],
         title: Text(
           "Wallmates",
           style: TextStyle(
@@ -99,7 +99,7 @@ class DetailedItem extends StatelessWidget {
                   width: 250,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    color: Colors.green[200],
+                    color: Colors.purple[200],
                   ),
                   child: Center(
                     child: Text(
